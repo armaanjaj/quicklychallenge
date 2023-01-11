@@ -67,6 +67,7 @@ function SignupForm() {
                                     placeholder="First Name"
                                     name="f_name"
                                     onChange={e => setfirst_name(e.target.value)}
+                                    required
                                 />
                             </div>
                             <div className="form-group">
@@ -77,6 +78,7 @@ function SignupForm() {
                                     placeholder="Last Name"
                                     name="l_name"
                                     onChange={e => setlast_name(e.target.value)}
+                                    required
                                 />
                             </div>
                             <div className="form-group">
@@ -87,6 +89,7 @@ function SignupForm() {
                                     placeholder="example@mail.com"
                                     name="email"
                                     onChange={e => setEmail(e.target.value)}
+                                    required
                                 />
                             </div>
                             <div className="form-group">
@@ -97,6 +100,7 @@ function SignupForm() {
                                     placeholder="Confirm Email"
                                     name="confirm_email"
                                     onChange={e => setConfirmEmail(e.target.value)}
+                                    required
                                 />
                             </div>
                             <div className="form-group">
@@ -107,6 +111,7 @@ function SignupForm() {
                                     placeholder="Password"
                                     name="password"
                                     onChange={e => setPassword(e.target.value)}
+                                    required
                                 />
                             </div>
                             <div className="form-group">
@@ -117,6 +122,7 @@ function SignupForm() {
                                     placeholder="Confirm Password"
                                     name="confirm_password"
                                     onChange={e => setConfirmPassword(e.target.value)}
+                                    required
                                 />
                             </div>
                             <div className="form-group">
@@ -127,6 +133,7 @@ function SignupForm() {
                                     placeholder="Your company"
                                     name="company"
                                     onChange={e => setCompany(e.target.value)}
+                                    required
                                 />
                             </div>
                             <button
