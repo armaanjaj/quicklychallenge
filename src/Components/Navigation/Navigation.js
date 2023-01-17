@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function Navigation() {
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark" data-testid="navigation-component">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white" data-bs-theme="light" data-testid="navigation-component">
         <div className="container-fluid">
-            <a className="navbar-brand" href="#">Quickly challenge</a>
+            <span className="navbar-brand">Quickly challenge</span>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
