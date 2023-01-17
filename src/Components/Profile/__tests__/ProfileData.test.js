@@ -6,12 +6,11 @@ afterEach(cleanup);
 
 test("The 'ProfileData' component should be rendered on the screen", ()=>{
     render(<ProfileData
-            data={{
-                full_name:"Test Test",
-                first_name:"Test",
-                last_name:"Test",
-                email:"test.test@mail.com"
-            }}
+                full_name="Test Test"
+                first_name="Test"
+                last_name="Test"
+                email="test.test@mail.com"
+                company="Company"
             />);
     const profileDataComponent = screen.getByTestId('profile-data-component')
     expect(profileDataComponent).toBeInTheDocument();

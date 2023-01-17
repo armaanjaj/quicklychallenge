@@ -25,13 +25,18 @@ function Profile() {
         else setPage401(true);
     }, [response]);
 
-    return (
+    if(page401 === true) return <Page401/>
+    else return(
         <div>
-            {page401 === true ? (<Page401/>)
-            :
-            (<ProfileData data={data} />)}
+            <ProfileData 
+            full_name={data.full_name}
+            first_name={data.first_name}
+            last_name={data.last_name}
+            email={data.email}
+            company={data.Company}
+            />
         </div>
-    );
+    )
 }
 
 export default Profile;

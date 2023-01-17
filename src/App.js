@@ -3,10 +3,11 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    redirect,
+    Navigate
 } from "react-router-dom";
 
-import Navigation from "./Components/Navigation/Navigation"; // Navigation bar
+// Navigation bar
+import Navigation from "./Components/Navigation/Navigation";
 
 // Application pages
 import Login from "./Pages/Login/Login";
