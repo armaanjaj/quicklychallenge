@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Loader from "../../Components/Loader/Loader";
 
 function ProfileData({
@@ -8,6 +9,14 @@ function ProfileData({
     email,
     company
 }) {
+
+    let navigate = useNavigate();
+
+    const handleLogout = (e) =>{
+        localStorage.clear();
+        navigate("/login");
+      }
+
     if(company === undefined) return <Loader/>
 
     return (
@@ -18,6 +27,14 @@ function ProfileData({
                 <li className="list-group-item"><h5>Last Name:</h5> {last_name}</li>
                 <li className="list-group-item"><h5>Email:</h5> {email}</li>
                 <li className="list-group-item"><h5>Company:</h5> {company.name}</li>
+                <li className="list-group-item">
+                <button
+                        className="btn btn-primary btn-customized my-2 w- mx-auto"
+                        onClick={handleLogout}
+                    >
+                        Logout
+                    </button>
+                </li>
             </ul>
         </div>
     );
